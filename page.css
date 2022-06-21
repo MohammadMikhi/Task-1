@@ -2,6 +2,15 @@ h2.title {
     text-align: center;
 }
 
+header{
+    background-image: url("movies poster.png");
+    height: 530px;
+    background-repeat: repeat;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
 .movie {
     border: 2px solid black;
     border-radius: 25px;
@@ -66,7 +75,6 @@ h2.title {
     border: 2px solid red;
     border-radius: 25px;
     position: sticky;
-    top: 0;
     background-color: white;
 }
 
@@ -81,7 +89,14 @@ h2.title {
     right: 1%;
     opacity: 40%;
 }
-@media only screen and (max-width: 768px){
+@media screen and (max-width: 768px) and (min-width:600px){
+    header{
+        background-image: url("movies poster 768.png");
+        background-repeat: no-repeat;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+    }
     .movie {
         border: 2px solid black;
         border-radius: 25px;
@@ -92,18 +107,6 @@ h2.title {
         flex-flow: column nowrap;
         align-items: space-between;
         justify-content: center;
-    }
-    
-    .movieDesc {
-        text-align: center;
-        margin: 5px;
-    }
-    
-    .buttons {
-        display: flex;
-        justify-content: space-around;
-        align-content: center;
-        margin: 5px;
     }
     
     .imgMovie {
@@ -149,18 +152,74 @@ h2.title {
         background-color: white;
     }
     
-    .menuItem:hover {
-        font-size: larger;
-        color: gray;
-    }
     .menuItem{
         font-size: large;
     }
+}
+
+@media screen and (max-width:425px) {
+    header{
+        background-image: url("movies poster 400.png");
+        height: 100px;
+        background-repeat: repeat;
+        background-position: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .movie {
+        border: 2px solid black;
+        border-radius: 25px;
+        width: 300px;
+        height: fit-content;
+        margin: 10px;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: space-between;
+        justify-content: center;
+    }
     
-    .copyright {
-        position: fixed;
-        bottom: 0;
-        right: 1%;
-        opacity: 40%;
+    .imgMovie {
+        width: 250px;
+        height: 250px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .mainMovies {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+        align-content: center;
+    }
+    
+    .personImg {
+        width: 200px;
+        height: 200px;
+        position: relative;
+        left: 15%;
+    }
+    
+    .aboutMe {
+        border: 2px solid red;
+        border-radius: 25px;
+        display: flex;
+        justify-content: flex-start;
+        align-content: flex-start;
+        flex-flow: column wrap;
+    }
+    
+    .mainMenu {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        border: 2px solid red;
+        border-radius: 25px;
+        position: sticky;
+        background-color: white;
+    }
+    
+    .menuItem{
+        font-size: small;
     }
 }
