@@ -81,3 +81,86 @@ h2.title {
     right: 1%;
     opacity: 40%;
 }
+@media only screen and (max-width: 768px){
+    .movie {
+        border: 2px solid black;
+        border-radius: 25px;
+        width: 450px;
+        height: fit-content;
+        margin: 10px;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: space-between;
+        justify-content: center;
+    }
+    
+    .movieDesc {
+        text-align: center;
+        margin: 5px;
+    }
+    
+    .buttons {
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        margin: 5px;
+    }
+    
+    .imgMovie {
+        width: 400px;
+        height: 400px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .mainMovies {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+        align-content: center;
+    }
+    
+    .personImg {
+        width: 150px;
+        height: 150px;
+        margin-right: 10px;
+        margin-bottom: 25px;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    
+    .aboutMe {
+        border: 2px solid red;
+        border-radius: 25px;
+        display: flex;
+        justify-content: flex-start;
+        align-content: flex-start;
+        flex-flow: row nowrap;
+    }
+    
+    .mainMenu {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        border: 2px solid red;
+        border-radius: 25px;
+        position: sticky;
+        background-color: white;
+    }
+    
+    .menuItem:hover {
+        font-size: larger;
+        color: gray;
+    }
+    .menuItem{
+        font-size: large;
+    }
+    
+    .copyright {
+        position: fixed;
+        bottom: 0;
+        right: 1%;
+        opacity: 40%;
+    }
+}
