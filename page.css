@@ -2,13 +2,16 @@ h2.title {
     text-align: center;
 }
 
-header{
+.backToTop {
+    position: fixed;
+}
+
+header {
     background-image: url("movies poster.png");
-    height: 530px;
+    height: 160px;
     background-repeat: repeat;
     background-position: center;
-    justify-content: center;
-    align-items: center;
+    margin: 10px;
 }
 
 .movie {
@@ -83,20 +86,16 @@ header{
     color: gray;
 }
 
-.copyright {
-    position: fixed;
-    bottom: 0;
-    right: 1%;
-    opacity: 40%;
-}
-@media screen and (max-width: 768px) and (min-width:600px){
-    header{
+
+@media screen and (max-width: 768px) and (min-width:600px) {
+    header {
         background-image: url("movies poster 768.png");
         background-repeat: no-repeat;
         justify-content: center;
         align-items: center;
         height: 200px;
     }
+
     .movie {
         border: 2px solid black;
         border-radius: 25px;
@@ -108,7 +107,7 @@ header{
         align-items: space-between;
         justify-content: center;
     }
-    
+
     .imgMovie {
         width: 400px;
         height: 400px;
@@ -116,14 +115,14 @@ header{
         margin-left: auto;
         margin-right: auto;
     }
-    
+
     .mainMovies {
         display: flex;
         flex-flow: column wrap;
         justify-content: space-around;
         align-content: center;
     }
-    
+
     .personImg {
         width: 150px;
         height: 150px;
@@ -132,7 +131,7 @@ header{
         margin-left: 20px;
         margin-top: 10px;
     }
-    
+
     .aboutMe {
         border: 2px solid red;
         border-radius: 25px;
@@ -141,24 +140,14 @@ header{
         align-content: flex-start;
         flex-flow: row nowrap;
     }
-    
-    .mainMenu {
-        display: flex;
-        justify-content: space-around;
-        align-items: flex-start;
-        border: 2px solid red;
-        border-radius: 25px;
-        position: sticky;
-        background-color: white;
-    }
-    
-    .menuItem{
+
+    .menuItem {
         font-size: large;
     }
 }
 
 @media screen and (max-width:425px) {
-    header{
+    header {
         background-image: url("movies poster 400.png");
         height: 100px;
         background-repeat: repeat;
@@ -166,6 +155,7 @@ header{
         justify-content: center;
         align-items: center;
     }
+
     .movie {
         border: 2px solid black;
         border-radius: 25px;
@@ -177,7 +167,7 @@ header{
         align-items: space-between;
         justify-content: center;
     }
-    
+
     .imgMovie {
         width: 250px;
         height: 250px;
@@ -185,21 +175,21 @@ header{
         margin-left: auto;
         margin-right: auto;
     }
-    
+
     .mainMovies {
         display: flex;
         flex-flow: column wrap;
         justify-content: space-around;
         align-content: center;
     }
-    
+
     .personImg {
         width: 200px;
         height: 200px;
         position: relative;
         left: 15%;
     }
-    
+
     .aboutMe {
         border: 2px solid red;
         border-radius: 25px;
@@ -208,18 +198,24 @@ header{
         align-content: flex-start;
         flex-flow: column wrap;
     }
-    
-    .mainMenu {
-        display: flex;
-        justify-content: space-around;
-        align-items: flex-start;
-        border: 2px solid red;
-        border-radius: 25px;
-        position: sticky;
-        background-color: white;
-    }
-    
-    .menuItem{
+
+    .menuItem {
         font-size: small;
+    }
+}
+
+@media screen and (orientation:portrait) {
+    .backToTop {
+        border-radius: 25px;
+        border: 2px solid blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        padding: 5px;
+        position: fixed;
+        right: 10%;
+        bottom: 5%;
+        background-color: lightgray;
     }
 }
