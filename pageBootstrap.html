@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Movie Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+
+<body>
+    <style>
+        .imgMovie {
+            width: 300px;
+            height: 300px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .movie {
+            margin: 10px;
+        }
+
+        .personImg {
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+        }
+        .backToTop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        padding: 5px;
+        right: 10%;
+        bottom: 5%;
+        background-color: lightgray;
+    }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous">
+    </script>
+    <script>
+        function buttonClick() {
+            window.open("Booking Form.html")
+        }
+    </script>
+
+    <a name="top"></a>
+    <div class="container-fluid position-sticky sticky-top">
+        <div class="mainMenu row justify-content-between align-items-center border border-2
+         border-danger rounded-pill bg-white ">
+            <h2 class="col text-center">Home Page</h2>
+            <h2 class="col text-center">List Of Movies</h2>
+            <h2 class="col text-center">Bookings</h2>
+        </div>
+    </div>
+    <header>
+    </header>
+    </br></br>
+    <blockquote class="blockquote text-center">
+        <p class="h1 ">List Of Movies</p></br>
+    </blockquote>
+    <div class="mainMovies container-fluid flex-row flex-wrap justify-content-around align-content-center">
+        <div class="movieRow row">
+            <div class="movie col border border-2 rounded-3 border-dark
+             flex-column flex-nowrap align-content-between justify-content-center">
+                <blockquote class="blockquote text-center">
+                    <h2 class="title">Joker</h2>
+                </blockquote>
+                <img src="https://m.media-amazon.com/images/I/71KPOvu-hOL._AC_SL1351_.jpg" class="imgMovie"
+                    alt="Joker poster" />
+                <p style="text-align:center; margin:5px;">Aliquam sit amet orci ut urna porta fringilla eget ac quam.
+                    Sed eu odio urna. Ut et
+                    finibus elit, ac
+                    laoreet neque. Vestibulum sed dictum dolor, quis maximus mi. Donec sed eros a tellus dictum dictum a
+                    at
+                    neque. Curabitur vitae diam dui. Donec bibendum, odio sit amet facilisis aliquam, tortor eros
+                    dignissim
+                    risus, eget fermentum ex massa eget mi. Mauris non auctor sem. </p>
+                <div class="container-fluid justify-content-around align-content-center">
+                    <div class="row m-2">
+                        <div class="col">
+                            <button onclick="buttonClick()">Book Now</button>
+                        </div>
+                        <div class="col"> <a href="https://www.netflix.com/browse">Netflix</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="movie col border border-2 rounded-3 border-dark
+             flex-column flex-nowrap align-content-between justify-content-center">
+                <blockquote class="blockquote text-center">
+                    <h2 class="title">Back To The Future</h2>
+                </blockquote>
+                <img src="https://images.complex.com/complex/images/c_fill,dpr_auto,f_auto,q_90,w_1400/fl_lossy,pg_1/gdv2pu6io6ekpg5r8mta/back-to-the-future"
+                    class="imgMovie" alt="Back To The Future poster" />
+                <p style="text-align:center; margin:5px;">Aliquam sit amet orci ut urna porta fringilla eget ac quam.
+                    Sed eu odio urna. Ut et
+                    finibus elit, ac
+                    laoreet neque. Vestibulum sed dictum dolor, quis maximus mi. Donec sed eros a tellus dictum dictum a
+                    at
+                    neque. Curabitur vitae diam dui. Donec bibendum, odio sit amet facilisis aliquam, tortor eros
+                    dignissim
+                    risus, eget fermentum ex massa eget mi. Mauris non auctor sem. </p>
+                <div class="container-fluid justify-content-around align-content-center">
+                    <div class="row m-2">
+                        <div class="col">
+                            <button onclick="buttonClick()">Book Now</button>
+                        </div>
+                        <div class="col"> <a href="https://www.netflix.com/browse">Netflix</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="movie col border border-2 rounded-3 border-dark
+             flex-column flex-nowrap align-content-between justify-content-center">
+                <blockquote class="blockquote text-center">
+                    <h2 class="title">WandaVision</h2>
+                </blockquote>
+                <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/wandavision.mp_240x360_crop_center.progressive.jpg?v=1614371756"
+                    class="imgMovie" alt="wandaVision poster" />
+                <p style="text-align:center; margin:5px;">Aliquam sit amet orci ut urna porta fringilla eget ac quam.
+                    Sed eu odio urna. Ut et
+                    finibus elit, ac
+                    laoreet neque. Vestibulum sed dictum dolor, quis maximus mi. Donec sed eros a tellus dictum dictum a
+                    at
+                    neque. Curabitur vitae diam dui. Donec bibendum, odio sit amet facilisis aliquam, tortor eros
+                    dignissim
+                    risus, eget fermentum ex massa eget mi. Mauris non auctor sem. </p>
+                <div class="container-fluid justify-content-around align-content-center">
+                    <div class="row m-2">
+                        <div class="col">
+                            <button onclick="buttonClick()">Book Now</button>
+                        </div>
+                        <div class="col"> <a href="https://www.netflix.com/browse">Netflix</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="movie col border border-2 rounded-3 border-dark
+             flex-column flex-nowrap align-content-between justify-content-center">
+                <blockquote class="blockquote text-center">
+                    <h2 class="title">Dora</h2>
+                </blockquote>
+                <img src="https://www.themoviedb.org/t/p/original/eGo5Ofdt0xCZPoPWfViHe4NMbwG.jpg" class="imgMovie"
+                    alt="Dora poster" />
+                <p style="text-align:center; margin:5px;">Aliquam sit amet orci ut urna porta fringilla eget ac quam.
+                    Sed eu odio urna. Ut et
+                    finibus elit, ac
+                    laoreet neque. Vestibulum sed dictum dolor, quis maximus mi. Donec sed eros a tellus dictum dictum a
+                    at
+                    neque. Curabitur vitae diam dui. Donec bibendum, odio sit amet facilisis aliquam, tortor eros
+                    dignissim
+                    risus, eget fermentum ex massa eget mi. Mauris non auctor sem. </p>
+                <div class="container-fluid justify-content-around align-content-center">
+                    <div class="row m-2">
+                        <div class="col">
+                            <button onclick="buttonClick()">Book Now</button>
+                        </div>
+                        <div class="col"> <a href="https://www.netflix.com/browse">Netflix</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="movieRow row">
+            <div class="movie col border border-2 rounded-3 border-dark
+             flex-column flex-nowrap align-content-between justify-content-center">
+                <blockquote class="blockquote text-center">
+                    <h2 class="title">The Godfather</h2>
+                </blockquote>
+                <img src="https://penji.co/wp-content/uploads/2019/09/The_Godfather-iconic-movie-posters.jpg"
+                    class="imgMovie" alt="The Godfather poster" />
+                <p style="text-align:center; margin:5px;">Aliquam sit amet orci ut urna porta fringilla eget ac quam.
+                    Sed eu odio urna. Ut et
+                    finibus elit, ac
+                    laoreet neque. Vestibulum sed dictum dolor, quis maximus mi. Donec sed eros a tellus dictum dictum a
+                    at
+                    neque. Curabitur vitae diam dui. Donec bibendum, odio sit amet facilisis aliquam, tortor eros
+                    dignissim
+                    risus, eget fermentum ex massa eget mi. Mauris non auctor sem. </p>
+                <div class="container-fluid justify-content-around align-content-center">
+                    <div class="row m-2">
+                        <div class="col">
+                            <button onclick="buttonClick()">Book Now</button>
+                        </div>
+                        <div class="col"> <a href="https://www.netflix.com/browse">Netflix</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="movie col border border-2 rounded-3 border-dark
+             flex-column flex-nowrap align-content-between justify-content-center">
+                <blockquote class="blockquote text-center">
+                    <h2 class="title">Back To The Future</h2>
+                </blockquote>
+                <img src="https://images.complex.com/complex/images/c_fill,dpr_auto,f_auto,q_90,w_1400/fl_lossy,pg_1/gdv2pu6io6ekpg5r8mta/back-to-the-future"
+                    class="imgMovie" alt="Back To The Future poster" />
+                <p style="text-align:center; margin:5px;">Aliquam sit amet orci ut urna porta fringilla eget ac quam.
+                    Sed eu odio urna. Ut et
+                    finibus elit, ac
+                    laoreet neque. Vestibulum sed dictum dolor, quis maximus mi. Donec sed eros a tellus dictum dictum a
+                    at
+                    neque. Curabitur vitae diam dui. Donec bibendum, odio sit amet facilisis aliquam, tortor eros
+                    dignissim
+                    risus, eget fermentum ex massa eget mi. Mauris non auctor sem. </p>
+                <div class="container-fluid justify-content-around align-content-center">
+                    <div class="row m-2">
+                        <div class="col">
+                            <button onclick="buttonClick()">Book Now</button>
+                        </div>
+                        <div class="col"> <a href="https://www.netflix.com/browse">Netflix</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="movie col border border-2 rounded-3 border-dark
+             flex-column flex-nowrap align-content-between justify-content-center">
+                <blockquote class="blockquote text-center">
+                    <h2 class="title">WandaVision</h2>
+                </blockquote>
+                <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/wandavision.mp_240x360_crop_center.progressive.jpg?v=1614371756"
+                    class="imgMovie" alt="wandaVision poster" />
+                <p style="text-align:center; margin:5px;">Aliquam sit amet orci ut urna porta fringilla eget ac quam.
+                    Sed eu odio urna. Ut et
+                    finibus elit, ac
+                    laoreet neque. Vestibulum sed dictum dolor, quis maximus mi. Donec sed eros a tellus dictum dictum a
+                    at
+                    neque. Curabitur vitae diam dui. Donec bibendum, odio sit amet facilisis aliquam, tortor eros
+                    dignissim
+                    risus, eget fermentum ex massa eget mi. Mauris non auctor sem. </p>
+                <div class="container-fluid justify-content-around align-content-center">
+                    <div class="row m-2">
+                        <div class="col">
+                            <button onclick="buttonClick()">Book Now</button>
+                        </div>
+                        <div class="col"> <a href="https://www.netflix.com/browse">Netflix</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="movie col border border-2 rounded-3 border-dark
+             flex-column flex-nowrap align-content-between justify-content-center">
+                <blockquote class="blockquote text-center">
+                    <h2 class="title">Dora</h2>
+                </blockquote>
+                <img src="https://www.themoviedb.org/t/p/original/eGo5Ofdt0xCZPoPWfViHe4NMbwG.jpg" class="imgMovie"
+                    alt="Dora poster" />
+                <p style="text-align:center; margin:5px;">Aliquam sit amet orci ut urna porta fringilla eget ac quam.
+                    Sed eu odio urna. Ut et
+                    finibus elit, ac
+                    laoreet neque. Vestibulum sed dictum dolor, quis maximus mi. Donec sed eros a tellus dictum dictum a
+                    at
+                    neque. Curabitur vitae diam dui. Donec bibendum, odio sit amet facilisis aliquam, tortor eros
+                    dignissim
+                    risus, eget fermentum ex massa eget mi. Mauris non auctor sem. </p>
+                <div class="container-fluid justify-content-around align-content-center">
+                    <div class="row m-2">
+                        <div class="col">
+                            <button onclick="buttonClick()">Book Now</button>
+                        </div>
+                        <div class="col"> <a href="https://www.netflix.com/browse">Netflix</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="movieRow row">
+            <div class="movie col border border-2 rounded-3 border-dark
+             flex-column flex-nowrap align-content-between justify-content-center">
+                <blockquote class="blockquote text-center">
+                    <h2 class="title">Joker</h2>
+                </blockquote>
+                <img src="https://m.media-amazon.com/images/I/71KPOvu-hOL._AC_SL1351_.jpg" class="imgMovie"
+                    alt="Joker poster" />
+                <p style="text-align:center; margin:5px;">Aliquam sit amet orci ut urna porta fringilla eget ac quam.
+                    Sed eu odio urna. Ut et
+                    finibus elit, ac
+                    laoreet neque. Vestibulum sed dictum dolor, quis maximus mi. Donec sed eros a tellus dictum dictum a
+                    at
+                    neque. Curabitur vitae diam dui. Donec bibendum, odio sit amet facilisis aliquam, tortor eros
+                    dignissim
+                    risus, eget fermentum ex massa eget mi. Mauris non auctor sem. </p>
+                <div class="container-fluid justify-content-around align-content-center">
+                    <div class="row m-2">
+                        <div class="col">
+                            <button onclick="buttonClick()">Book Now</button>
+                        </div>
+                        <div class="col"> <a href="https://www.netflix.com/browse">Netflix</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="movie col border border-2 rounded-3 border-dark
+             flex-column flex-nowrap align-content-between justify-content-center">
+                <blockquote class="blockquote text-center">
+                    <h2 class="title">Back To The Future</h2>
+                </blockquote>
+                <img src="https://images.complex.com/complex/images/c_fill,dpr_auto,f_auto,q_90,w_1400/fl_lossy,pg_1/gdv2pu6io6ekpg5r8mta/back-to-the-future"
+                    class="imgMovie" alt="Back To The Future poster" />
+                <p style="text-align:center; margin:5px;">Aliquam sit amet orci ut urna porta fringilla eget ac quam.
+                    Sed eu odio urna. Ut et
+                    finibus elit, ac
+                    laoreet neque. Vestibulum sed dictum dolor, quis maximus mi. Donec sed eros a tellus dictum dictum a
+                    at
+                    neque. Curabitur vitae diam dui. Donec bibendum, odio sit amet facilisis aliquam, tortor eros
+                    dignissim
+                    risus, eget fermentum ex massa eget mi. Mauris non auctor sem. </p>
+                <div class="container-fluid justify-content-around align-content-center">
+                    <div class="row m-2">
+                        <div class="col">
+                            <button onclick="buttonClick()">Book Now</button>
+                        </div>
+                        <div class="col"> <a href="https://www.netflix.com/browse">Netflix</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="movie col border border-2 rounded-3 border-dark
+             flex-column flex-nowrap align-content-between justify-content-center">
+                <blockquote class="blockquote text-center">
+                    <h2 class="title">WandaVision</h2>
+                </blockquote>
+                <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/wandavision.mp_240x360_crop_center.progressive.jpg?v=1614371756"
+                    class="imgMovie" alt="wandaVision poster" />
+                <p style="text-align:center; margin:5px;">Aliquam sit amet orci ut urna porta fringilla eget ac quam.
+                    Sed eu odio urna. Ut et
+                    finibus elit, ac
+                    laoreet neque. Vestibulum sed dictum dolor, quis maximus mi. Donec sed eros a tellus dictum dictum a
+                    at
+                    neque. Curabitur vitae diam dui. Donec bibendum, odio sit amet facilisis aliquam, tortor eros
+                    dignissim
+                    risus, eget fermentum ex massa eget mi. Mauris non auctor sem. </p>
+                <div class="container-fluid justify-content-around align-content-center">
+                    <div class="row m-2">
+                        <div class="col">
+                            <button onclick="buttonClick()">Book Now</button>
+                        </div>
+                        <div class="col"> <a href="https://www.netflix.com/browse">Netflix</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="movie col border border-2 rounded-3 border-dark
+             flex-column flex-nowrap align-content-between justify-content-center">
+                <blockquote class="blockquote text-center">
+                    <h2 class="title">Dora</h2>
+                </blockquote>
+                <img src="https://www.themoviedb.org/t/p/original/eGo5Ofdt0xCZPoPWfViHe4NMbwG.jpg" class="imgMovie"
+                    alt="Dora poster" />
+                <p style="text-align:center; margin:5px;">Aliquam sit amet orci ut urna porta fringilla eget ac quam.
+                    Sed eu odio urna. Ut et
+                    finibus elit, ac
+                    laoreet neque. Vestibulum sed dictum dolor, quis maximus mi. Donec sed eros a tellus dictum dictum a
+                    at
+                    neque. Curabitur vitae diam dui. Donec bibendum, odio sit amet facilisis aliquam, tortor eros
+                    dignissim
+                    risus, eget fermentum ex massa eget mi. Mauris non auctor sem. </p>
+                <div class="container-fluid justify-content-around align-content-center">
+                    <div class="row m-2">
+                        <div class="col">
+                            <button onclick="buttonClick()">Book Now</button>
+                        </div>
+                        <div class="col"> <a href="https://www.netflix.com/browse">Netflix</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="movieRow row">
+            <div class="movie col border border-2 rounded-3 border-dark
+             flex-column flex-nowrap align-content-between justify-content-center">
+                <blockquote class="blockquote text-center">
+                    <h2 class="title">Joker</h2>
+                </blockquote>
+                <img src="https://m.media-amazon.com/images/I/71KPOvu-hOL._AC_SL1351_.jpg" class="imgMovie"
+                    alt="Joker poster" />
+                <p style="text-align:center; margin:5px;">Aliquam sit amet orci ut urna porta fringilla eget ac quam.
+                    Sed eu odio urna. Ut et
+                    finibus elit, ac
+                    laoreet neque. Vestibulum sed dictum dolor, quis maximus mi. Donec sed eros a tellus dictum dictum a
+                    at
+                    neque. Curabitur vitae diam dui. Donec bibendum, odio sit amet facilisis aliquam, tortor eros
+                    dignissim
+                    risus, eget fermentum ex massa eget mi. Mauris non auctor sem. </p>
+                <div class="container-fluid justify-content-around align-content-center">
+                    <div class="row m-2">
+                        <div class="col">
+                            <button onclick="buttonClick()">Book Now</button>
+                        </div>
+                        <div class="col"> <a href="https://www.netflix.com/browse">Netflix</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="movie col border border-2 rounded-3 border-dark
+             flex-column flex-nowrap align-content-between justify-content-center">
+                <blockquote class="blockquote text-center">
+                    <h2 class="title">Back To The Future</h2>
+                </blockquote>
+                <img src="https://images.complex.com/complex/images/c_fill,dpr_auto,f_auto,q_90,w_1400/fl_lossy,pg_1/gdv2pu6io6ekpg5r8mta/back-to-the-future"
+                    class="imgMovie" alt="Back To The Future poster" />
+                <p style="text-align:center; margin:5px;">Aliquam sit amet orci ut urna porta fringilla eget ac quam.
+                    Sed eu odio urna. Ut et
+                    finibus elit, ac
+                    laoreet neque. Vestibulum sed dictum dolor, quis maximus mi. Donec sed eros a tellus dictum dictum a
+                    at
+                    neque. Curabitur vitae diam dui. Donec bibendum, odio sit amet facilisis aliquam, tortor eros
+                    dignissim
+                    risus, eget fermentum ex massa eget mi. Mauris non auctor sem. </p>
+                <div class="container-fluid justify-content-around align-content-center">
+                    <div class="row m-2">
+                        <div class="col">
+                            <button onclick="buttonClick()">Book Now</button>
+                        </div>
+                        <div class="col"> <a href="https://www.netflix.com/browse">Netflix</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="movie col border border-2 rounded-3 border-dark
+             flex-column flex-nowrap align-content-between justify-content-center">
+                <blockquote class="blockquote text-center">
+                    <h2 class="title">WandaVision</h2>
+                </blockquote>
+                <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/wandavision.mp_240x360_crop_center.progressive.jpg?v=1614371756"
+                    class="imgMovie" alt="wandaVision poster" />
+                <p style="text-align:center; margin:5px;">Aliquam sit amet orci ut urna porta fringilla eget ac quam.
+                    Sed eu odio urna. Ut et
+                    finibus elit, ac
+                    laoreet neque. Vestibulum sed dictum dolor, quis maximus mi. Donec sed eros a tellus dictum dictum a
+                    at
+                    neque. Curabitur vitae diam dui. Donec bibendum, odio sit amet facilisis aliquam, tortor eros
+                    dignissim
+                    risus, eget fermentum ex massa eget mi. Mauris non auctor sem. </p>
+                <div class="container-fluid justify-content-around align-content-center">
+                    <div class="row m-2">
+                        <div class="col">
+                            <button onclick="buttonClick()">Book Now</button>
+                        </div>
+                        <div class="col"> <a href="https://www.netflix.com/browse">Netflix</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="movie col border border-2 rounded-3 border-dark
+             flex-column flex-nowrap align-content-between justify-content-center">
+                <blockquote class="blockquote text-center">
+                    <h2 class="title">Dora</h2>
+                </blockquote>
+                <img src="https://www.themoviedb.org/t/p/original/eGo5Ofdt0xCZPoPWfViHe4NMbwG.jpg" class="imgMovie"
+                    alt="Dora poster" />
+                <p style="text-align:center; margin:5px;">Aliquam sit amet orci ut urna porta fringilla eget ac quam.
+                    Sed eu odio urna. Ut et
+                    finibus elit, ac
+                    laoreet neque. Vestibulum sed dictum dolor, quis maximus mi. Donec sed eros a tellus dictum dictum a
+                    at
+                    neque. Curabitur vitae diam dui. Donec bibendum, odio sit amet facilisis aliquam, tortor eros
+                    dignissim
+                    risus, eget fermentum ex massa eget mi. Mauris non auctor sem. </p>
+                <div class="container-fluid justify-content-around align-content-center">
+                    <div class="row m-2">
+                        <div class="col">
+                            <button onclick="buttonClick()">Book Now</button>
+                        </div>
+                        <div class="col"> <a href="https://www.netflix.com/browse">Netflix</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <h2 style="text-align: center;">About Me</h2>
+    <div class="aboutMe container-fluid border border-2 border-danger rounded-3" style="margin:10px ;">
+        <div class="row">
+            <div class="col col-md-2">
+                <img src="https://www.dmarge.com/wp-content/uploads/2021/01/dwayne-the-rock-.jpg"
+                    class="personImg rounded" alt="Person Image" />
+            </div>
+            <div class="col col-md-auto">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                    eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                    sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+    </div>
+    <div class="backToTop d-inline-block d-md-none position-fixed border rounded-pill justify-content-center align-items-center"><a href="#top">Back To The Top</a></div>
+</body>
+
+</html>
