@@ -1,0 +1,20 @@
+@media screen and (max-width:425px){
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .booking{
+        margin: 10px;
+    }
+}
+@media screen and (orientation:portrait){
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .booking{
+        margin: 20px;
+    }
+}

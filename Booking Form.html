@@ -1,42 +1,49 @@
 <!DOCTYPE html>
 
 <head>
-
+    <link rel="stylesheet" href="Booking Form.css" />
+    <script>
+        function cancelClick() {
+            window.open("page.html");
+        }
+    </script>
 </head>
 
 <body>
-    <form>
-        <fieldset>
-            <legend>Booking Form</legend>
-            <label for="fname">First Name: </label>
-            <input type="text" id="fname" name="fname" /><br /><br />
-            <label for="lname">Last Name: </label>
-            <input type="text" id="lname" name="lname" /><br /><br />
-            <label for="email">Email: </label>
-            <input type="email" id="email" name="email" /> <br /><br />
-            <label for="times">Showing Times: </label>
-            <select id="times" name="times">
-                <option value="11:30am">11:30am</option>
-                <option value="2:30pm">2:30pm</option>
-                <option value="8:00am">8:00pm</option>
-            </select><br /><br />
-            <label>Movie Class: </label>
-            <input type="radio" id="first" name="movieClass" value="first" />
-            <label for="first">First Class</label>&emsp;
-            <input type="radio" id="economy" name="movieClass" value="economy" />
-            <label for="economy">Economy Class</label><br /><br />
-            <label>Payement Method: </label>
-            <input type="radio" id="cash" name="payment" value="cash" />
-            <label for="cash">Cash</label>&emsp;
-            <input type="radio" id="credit" name="payment" value="credit" />
-            <label for="credit">Credit Card</label><br /><br />
-            <input type="checkbox" id="subscribe" name="subscribe" value="subscribe" />
-            <label for="subscribe">Subscribe To Email Service</label><br /><br />
-            <button>Cancel Booking</button>&emsp;&emsp;&emsp;&emsp;
-            <input type="submit" value="Confirm Booking" />
+    <main>
+        <form class="booking">
+            <fieldset class="fields">
+                <legend>Booking Form</legend>
+                <label for="fname">First Name: </label>
+                <input type="text" id="fname" name="fname" /><br /><br />
+                <label for="lname">Last Name: </label>
+                <input type="text" id="lname" name="lname" /><br /><br />
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" /> <br /><br />
+                <label for="times">Showing Times: </label>
+                <select id="times" name="times">
+                    <option value="11:30am">11:30am</option>
+                    <option value="2:30pm">2:30pm</option>
+                    <option value="8:00am">8:00pm</option>
+                </select><br /><br />
+                <label>Movie Class: </label>
+                <input type="radio" id="first" name="movieClass" value="first" />
+                <label for="first">First Class</label>&emsp;
+                <input type="radio" id="economy" name="movieClass" value="economy" />
+                <label for="economy">Economy Class</label><br /><br />
+                <label>Payement Method: </label>
+                <input type="radio" id="cash" name="payment" value="cash" />
+                <label for="cash">Cash</label>&emsp;
+                <input type="radio" id="credit" name="payment" value="credit" />
+                <label for="credit">Credit Card</label><br /><br />
+                <input type="checkbox" id="subscribe" name="subscribe" value="subscribe" />
+                <label for="subscribe">Subscribe To Email Service</label><br /><br />
+                <button onclick="cancelClick()">Cancel Booking</button>&emsp;&emsp;&emsp;&emsp;
+                <input type="submit" value="Confirm Booking" />
 
-        </fieldset>
-    </form>
+            </fieldset>
+        </form>
+    </main>
 </body>
 
 </html>
