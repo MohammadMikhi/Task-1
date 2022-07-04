@@ -762,24 +762,42 @@
         </br></br>
         <hr />
     </main>
-    <footer>
-        <div class="container contact m-2">
-            <h3>Contact Us</h3>
-            <div class="row m-1">
-                <span class="material-symbols-outlined col col-auto">call</span>
-                <span class="col col-auto"> +962799803181</span>
+    <div class="footer container">
+        <h3 class="text-center">Contact Us</h3>
+        <div class="m-2 w-auto float-start">
+            <h5>Contact Information</h5>
+            <hr>
+            <div class="row">
+                <span class="material-symbols-outlined col col-auto m-1">call</span>
+                <span class="col col-auto m-1"> +962799803181</span>
             </div>
-            <div class="row m-1">
-                <span class="material-symbols-outlined col col-auto">mail</span>
-                <span class="col col-auto"> MohammadMikhi01@gmail.com</span>
+            <div class="row">
+                <span class="material-symbols-outlined col col-auto m-1">mail</span>
+                <span class="col col-auto m-1"> MohammadMikhi01@gmail.com</span>
             </div>
-            <div class="row m-1">
-                <span class="material-symbols-outlined col col-auto">pin_drop</span>
-                <span class="col col-auto"> Amman, Jordan</span>
+            <div class="row">
+                <span class="material-symbols-outlined col col-auto m-1">pin_drop</span>
+                <span class="col col-auto m-1"> Amman, Jordan</span>
             </div>
-
         </div>
-    </footer>
+        <div class="m-2 w-25 float-end" style="margin-right:50px ;">
+            <h5>Send Us A Message</h5>
+            <hr>
+            <form>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="nameInput" placeholder="Name">
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" id="emailInput" placeholder="Email">
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" id="messageInput" rows="3"
+                        placeholder="Enter Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </div>
 
     <div
         class="backToTop d-inline-block d-md-none position-fixed border rounded-pill justify-content-center align-items-center">
