@@ -11,8 +11,8 @@
 }
 
 .personImg {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     margin: 10px;
 }
 
@@ -36,4 +36,44 @@
 .pageLogo {
     width: 100px;
     height: 100px;
+}
+.nav-link{
+    font-size: 1.75em;
+    color: black;
+    background-color: white;
+    border: 0;
+}
+.carousel-caption{
+    position: absolute;
+    top: 40%;
+    right: 20%;
+    bottom: 25%;
+    left: 20%;
+}
+.title{
+    text-align: start;
+    margin: 6px;
+}
+.desc{
+    text-align: start;
+    font-size: 1.2em;
+}
+.genre{
+ text-align: start;
+ color: red;
+ font-weight: bold;
+}
+.rating{
+    font-size: large;
+}
+.trailer{
+    margin-left: 20px;
+}
+.playIcon{
+    position: relative;
+    display: inline-flex;
+    vertical-align: middle;
+}
+.poster{
+    opacity: 75%;
 }
